@@ -1,0 +1,33 @@
+{
+  "rules": {
+    "news": {
+      ".read": true,
+      "$newsId": {
+        ".write": "auth != null && (auth.uid === '0PECX0UGa6QRZ9xxIS3sYpn1ZLT2' || auth.uid === 'QbNRa4NrqJdndSgp0fCEtXyoqqe2')",
+        "views": {
+          ".write": "newData.isNumber() && ((!data.exists() && newData.val() === 1) || (data.isNumber() && newData.val() === data.val() + 1) || (data.exists() && !data.isNumber() && newData.val() === 1))"
+        }
+      }
+    },
+    "categories": {
+      ".read": true,
+      ".write": "auth != null && (auth.uid === '0PECX0UGa6QRZ9xxIS3sYpn1ZLT2' || auth.uid === 'QbNRa4NrqJdndSgp0fCEtXyoqqe2')"
+    },
+    "breakingNews": {
+      ".read": true,
+      ".write": "auth != null && (auth.uid === '0PECX0UGa6QRZ9xxIS3sYpn1ZLT2' || auth.uid === 'QbNRa4NrqJdndSgp0fCEtXyoqqe2')"
+    },
+    "team": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === '0PECX0UGa6QRZ9xxIS3sYpn1ZLT2'"
+    },
+    "settings": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === '0PECX0UGa6QRZ9xxIS3sYpn1ZLT2'"
+    },
+    "ads": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === '0PECX0UGa6QRZ9xxIS3sYpn1ZLT2'"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+সব ফাইল GitHub repo root-এ একই structure-এ upload/replace করে Commit করুন। Netlify deploy শেষ হলে নতুন Published news খুলে Facebook Share দিয়ে test করুন।

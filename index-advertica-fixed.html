@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<title>দেশের নিউজ | সত্যের সাথে, দেশের কথা</title>
+<meta name="description" content="দেশের নিউজ — জাতীয়, রাজনীতি, আন্তর্জাতিক, অর্থনীতি, খেলাধুলা, বিনোদন, প্রযুক্তি ও সারাদেশের সর্বশেষ সংবাদ।">
+<meta property="og:type" content="website">
+<meta property="og:title" content="দেশের নিউজ">
+<meta property="og:description" content="সত্যের সাথে, দেশের কথা">
+<meta property="og:image" content="https://placehold.co/1200x630/b00020/ffffff?text=Desher+News">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#b00020;--red2:#d71920;--ink:#111827;--muted:#667085;--line:#e7e9ee;--bg:#f6f7f9;--card:#fff;--dark:#0d1726;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hind Siliguri",sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,input{font:inherit}
+.container{width:min(var(--max),calc(100% - 30px));margin:auto}
+.utility{background:var(--dark);color:#dce2ea;font-size:13px}.utility .container{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.utility-right{display:flex;gap:15px}.brandbar{background:#fff}.brandbar .container{min-height:102px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.weather{font-size:14px;color:var(--muted)}.brand{text-align:center}.brand h1{font-family:"Noto Serif Bengali",serif;color:var(--red);font-size:46px;line-height:1;margin:0;font-weight:700;letter-spacing:-2px}.brand p{margin:8px 0 0;color:#6b7280;font-size:14px}
+.header-actions{display:flex;justify-content:flex-end;gap:8px}.iconbtn{width:42px;height:42px;border:1px solid var(--line);background:#fff;border-radius:50%;display:grid;place-items:center;cursor:pointer;font-size:18px}
+.navwrap{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}.nav{height:51px;display:flex;align-items:center;gap:24px;overflow:auto;scrollbar-width:none;font-weight:600;white-space:nowrap}.nav::-webkit-scrollbar{display:none}.nav a:first-child,.nav a:hover{color:var(--red)}
+.breaking{margin:18px auto 0;background:#fff;border:1px solid var(--line);border-radius:8px;display:flex;align-items:stretch;overflow:hidden}.breaking-label{background:var(--red);color:#fff;padding:11px 17px;font-weight:700;white-space:nowrap}.breaking-track{padding:11px 16px;white-space:nowrap;overflow:hidden;position:relative;flex:1}.breaking-track span{display:inline-block;animation:move 22s linear infinite}@keyframes move{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+.adslot{display:none}
+.hero{display:grid;grid-template-columns:1.65fr .85fr;gap:20px;margin-top:20px}.lead,.story,.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}.lead{position:relative}.lead-image{position:relative}.lead-image img{width:100%;aspect-ratio:16/8.8;object-fit:cover}.lead-image:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.82))}.lead-copy{position:absolute;left:0;right:0;bottom:0;padding:28px;color:#fff;z-index:2}.category{display:inline-block;background:var(--red);color:#fff;padding:3px 9px;border-radius:4px;font-size:13px;font-weight:600}.lead h2{font-family:"Noto Serif Bengali",serif;font-size:34px;line-height:1.28;margin:10px 0}.meta{font-size:13px;color:#8a94a3}.lead .meta{color:#e2e8f0}.sidelead{display:grid;gap:14px}.sidelead .story{display:grid;grid-template-columns:145px 1fr;min-height:115px}.sidelead img{width:100%;height:100%;object-fit:cover}.story-copy{padding:13px}.story h3{font-family:"Noto Serif Bengali",serif;font-size:18px;line-height:1.35;margin:5px 0 8px}
+.mainlayout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:22px;margin-top:28px}.section{margin-bottom:30px}.section-head{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--ink);margin-bottom:15px}.section-head h2{font-family:"Noto Serif Bengali",serif;margin:0 0 -2px;border-bottom:4px solid var(--red);padding:0 2px 9px;font-size:25px}.section-head a{font-size:14px;color:var(--red);font-weight:600}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.news-card{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden;transition:.2s}.news-card:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(16,24,40,.08)}.news-card img{width:100%;aspect-ratio:16/9;object-fit:cover}.news-card .copy{padding:13px}.news-card h3{font-family:"Noto Serif Bengali",serif;font-size:19px;line-height:1.4;margin:6px 0 8px}
+.feature-row{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}.feature-big{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}.feature-big img{width:100%;aspect-ratio:16/9;object-fit:cover}.feature-big .copy{padding:17px}.feature-big h3{font-family:"Noto Serif Bengali";font-size:26px;line-height:1.35;margin:8px 0}.list{display:grid;gap:10px}.list-item{background:#fff;border:1px solid var(--line);border-radius:8px;display:grid;grid-template-columns:115px 1fr;overflow:hidden}.list-item img{width:100%;height:100%;object-fit:cover}.list-item .copy{padding:10px}.list-item h4{font-family:"Noto Serif Bengali";margin:3px 0;font-size:16px;line-height:1.35}
+.sidebar{display:grid;align-content:start;gap:18px}.panel{padding:16px}.panel-title{font-family:"Noto Serif Bengali";font-size:21px;border-left:4px solid var(--red);padding-left:10px;margin:0 0 14px}.rank{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.rank:last-child{border:0}.rank-no{font-size:25px;font-weight:700;color:#c9cdd4}.rank h4{font-family:"Noto Serif Bengali";font-size:16px;line-height:1.4;margin:0}
+.newsletter{background:var(--dark);color:#fff}.newsletter p{color:#cbd5e1}.newsletter input{width:100%;border:0;border-radius:6px;padding:11px;margin:5px 0 8px}.subscribe{width:100%;border:0;border-radius:6px;padding:10px;background:var(--red2);color:#fff;font-weight:600;cursor:pointer}
+footer{background:var(--dark);color:#e5e7eb;margin-top:45px}.footer-top{padding:40px 0;display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:30px}.footer-logo{font-family:"Noto Serif Bengali";font-size:32px;color:#fff}.footer-top p,.footer-top a{color:#aeb7c4;font-size:14px}.footer-links{display:grid;gap:8px}.footer-bottom{border-top:1px solid #263244;padding:15px 0;color:#98a2b3;font-size:13px;display:flex;justify-content:space-between}
+.searchbox{display:none;position:fixed;inset:0;background:rgba(10,18,30,.72);z-index:100;padding:80px 15px}.searchinner{max-width:700px;margin:auto;background:#fff;padding:20px;border-radius:12px;display:flex;gap:8px}.searchinner input{flex:1;border:1px solid var(--line);padding:12px;border-radius:8px}.searchinner button{border:0;background:var(--red);color:#fff;border-radius:8px;padding:0 18px}
+.mobilemenu{display:none}
+@media(max-width:960px){.hero{grid-template-columns:1fr}.sidelead{grid-template-columns:1fr 1fr}.mainlayout{grid-template-columns:1fr}.sidebar{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:2fr 1fr 1fr}.footer-top>div:last-child{display:none}}
+@media(max-width:680px){.container{width:min(100% - 20px,var(--max))}.utility-right{display:none}.brandbar .container{min-height:80px;grid-template-columns:1fr auto}.weather{display:none}.brand{text-align:left}.brand h1{font-size:34px}.brand p{font-size:12px}.header-actions .iconbtn:first-child{display:none}.nav{gap:19px;height:47px}.breaking{margin-top:10px}.breaking-label{padding:9px 11px}.breaking-track{padding:9px 10px}.lead-image img{aspect-ratio:4/3}.lead-copy{padding:17px}.lead h2{font-size:26px}.sidelead{grid-template-columns:1fr}.sidelead .story{grid-template-columns:120px 1fr}.mainlayout{margin-top:22px}.grid3{grid-template-columns:1fr 1fr}.feature-row{grid-template-columns:1fr}.sidebar{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}.footer-top>div:first-child{grid-column:1/-1}.footer-bottom{display:block}.footer-bottom span{display:block;margin:4px 0}}
+@media(max-width:430px){.grid3{grid-template-columns:1fr}.lead h2{font-size:23px}.lead-image img{min-height:360px}.lead-copy p{display:none}.section-head h2{font-size:22px}.footer-top{grid-template-columns:1fr 1fr}}
+
+.article-click{cursor:pointer}.article-click:hover h2,.article-click:hover h3,.article-click:hover h4{color:#b3001b}
+.adslot.active{display:block;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px;margin-top:18px;text-align:center;overflow:hidden}
+.article-page{display:none;max-width:900px;margin:25px auto}.article-page.active{display:block}.article-page .article-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px}.article-page h1{font-family:"Noto Serif Bengali",serif;font-size:38px;line-height:1.3;margin:10px 0}.article-page .article-img{width:100%;max-height:560px;object-fit:cover;border-radius:8px;margin:18px 0}.article-body{font-size:19px;line-height:1.9;white-space:pre-wrap}.backbtn,.sharebtn{border:0;border-radius:7px;padding:9px 13px;cursor:pointer}.backbtn{background:#eef1f5}.sharebtn{background:#1877f2;color:#fff;margin-left:7px}.empty{background:#fff;border:1px solid var(--line);padding:25px;border-radius:9px;color:#667085}
+@media(max-width:680px){.article-page h1{font-size:28px}.article-page .article-card{padding:16px}.article-body{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="utility"><div class="container"><span id="today">আজকের তারিখ</span><div class="utility-right"><span>ঢাকা, বাংলাদেশ</span><span>ই-পেপার</span><span>যোগাযোগ</span></div></div></div>
+
+<div class="brandbar"><div class="container">
+  <div class="weather">☀️ বাংলাদেশ &nbsp; | &nbsp; সর্বশেষ সংবাদ</div>
+  <a class="brand" href="#"><h1>দেশের নিউজ</h1><p>সত্যের সাথে, দেশের কথা</p></a>
+  <div class="header-actions"><button class="iconbtn" title="ফেসবুক">f</button><button class="iconbtn" onclick="openSearch()" title="খুঁজুন">⌕</button></div>
+</div></div>
+
+<div class="navwrap"><nav class="container nav">
+<a href="#">হোম</a><a href="#latest">সর্বশেষ</a><a href="#national">জাতীয়</a><a href="#politics">রাজনীতি</a><a href="#international">আন্তর্জাতিক</a><a href="#economy">অর্থনীতি</a><a href="#sports">খেলাধুলা</a><a href="#entertainment">বিনোদন</a><a href="#technology">প্রযুক্তি</a><a href="#">শিক্ষা</a><a href="#">স্বাস্থ্য</a><a href="#">লাইফস্টাইল</a>
+</nav></div>
+
+<div class="container breaking"><div class="breaking-label">ব্রেকিং</div><div class="breaking-track"><span>দেশের নিউজে স্বাগতম &nbsp; • &nbsp; গুরুত্বপূর্ণ ব্রেকিং নিউজ এখানে প্রদর্শিত হবে &nbsp; • &nbsp; সর্বশেষ আপডেট জানতে সঙ্গে থাকুন</span></div></div>
+
+<div class="container adslot" id="AD_TOP"></div>
+
+<main class="container">
+<section class="hero">
+  <article class="lead">
+    <div class="lead-image"><img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1400&q=82" alt="প্রধান সংবাদ"></div>
+    <div class="lead-copy"><span class="category">জাতীয়</span><h2>দেশের গুরুত্বপূর্ণ প্রধান সংবাদ এখানে বড় শিরোনামে প্রকাশিত হবে</h2><p>প্রধান সংবাদের গুরুত্বপূর্ণ অংশ সংক্ষেপে এখানে থাকবে, যাতে পাঠক দ্রুত খবরের বিষয়টি বুঝতে পারেন।</p><div class="meta">নিজস্ব প্রতিবেদক &nbsp; • &nbsp; ১০ মিনিট আগে</div></div>
+  </article>
+  <div class="sidelead" id="sideLead"></div>
+</section>
+
+<div class="mainlayout">
+<div>
+<section class="section" id="latest"><div class="section-head"><h2>সর্বশেষ সংবাদ</h2><a href="#">সব সংবাদ →</a></div><div class="grid3" id="latestGrid"></div></section>
+
+<div class="adslot" id="AD_MIDDLE"></div><section class="section" id="national"><div class="section-head"><h2>জাতীয়</h2><a href="#">আরও দেখুন →</a></div>
+<div class="feature-row"><article class="feature-big"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1000&q=80" alt=""><div class="copy"><span class="category">জাতীয়</span><h3>সারাদেশের গুরুত্বপূর্ণ খবর ও মানুষের কথা</h3><div class="meta">নিজস্ব প্রতিবেদক • ১ ঘণ্টা আগে</div></div></article><div class="list" id="nationalList"></div></div>
+</section>
+
+<section class="section" id="politics"><div class="section-head"><h2>রাজনীতি</h2><a href="#">আরও দেখুন →</a></div><div class="grid3" id="politicsGrid"></div></section>
+<section class="section" id="sports"><div class="section-head"><h2>খেলাধুলা</h2><a href="#">আরও দেখুন →</a></div><div class="grid3" id="sportsGrid"></div></section>
+<section class="section" id="technology"><div class="section-head"><h2>প্রযুক্তি</h2><a href="#">আরও দেখুন →</a></div><div class="grid3" id="techGrid"></div></section>
+</div>
+
+<aside class="sidebar">
+<div class="panel"><h3 class="panel-title">সর্বাধিক পঠিত</h3><div id="popular"></div></div>
+<div class="panel newsletter"><h3 class="panel-title">দেশের নিউজ আপডেট</h3><p>গুরুত্বপূর্ণ সংবাদ পেতে ইমেইল দিয়ে যুক্ত থাকুন।</p><input type="email" placeholder="আপনার ইমেইল"><button class="subscribe">সাবস্ক্রাইব</button></div>
+<div class="panel"><h3 class="panel-title">বিভাগসমূহ</h3><div class="footer-links"><a href="#">জাতীয়</a><a href="#">রাজনীতি</a><a href="#">আন্তর্জাতিক</a><a href="#">অর্থনীতি</a><a href="#">খেলাধুলা</a><a href="#">প্রযুক্তি</a></div></div>
+<div class="adslot" id="AD_SIDEBAR"></div>
+</aside>
+</div>
+</main>
+<section id="articlePage" class="container article-page"><div class="article-card">
+<button class="backbtn" id="backBtn">← হোমে ফিরুন</button><button class="sharebtn" id="shareBtn">Facebook-এ শেয়ার</button>
+<div id="articleContent"></div><div class="adslot" id="AD_ARTICLE_BOTTOM"></div></div></section>
+<div class="container adslot" id="AD_BOTTOM"></div>
+<footer><div class="container footer-top">
+<div><div class="footer-logo">দেশের নিউজ</div><p>দেশ, মানুষ ও বিশ্বের গুরুত্বপূর্ণ সংবাদ দ্রুত, পরিষ্কার এবং দায়িত্বশীলভাবে পাঠকের কাছে পৌঁছে দেওয়ার সংবাদমাধ্যম।</p><p>ইমেইল: news@example.com</p></div>
+<div><h3>বিভাগ</h3><div class="footer-links"><a href="#">জাতীয়</a><a href="#">রাজনীতি</a><a href="#">আন্তর্জাতিক</a><a href="#">অর্থনীতি</a><a href="#">খেলাধুলা</a></div></div>
+<div><h3>প্রয়োজনীয়</h3><div class="footer-links"><a href="#">আমাদের সম্পর্কে</a><a href="#">যোগাযোগ</a><a href="#">গোপনীয়তা নীতি</a><a href="#">সম্পাদকীয় নীতি</a><a href="#">বিজ্ঞাপন</a></div></div>
+<div><h3>সামাজিক মাধ্যম</h3><div class="footer-links"><a href="#">Facebook</a><a href="#">YouTube</a><a href="#">X / Twitter</a></div></div>
+</div><div class="container footer-bottom"><span>© <span id="year"></span> দেশের নিউজ — সর্বস্বত্ব সংরক্ষিত</span><span>সত্যের সাথে, দেশের কথা</span></div></footer>
+
+<div class="searchbox" id="searchbox" onclick="if(event.target===this)closeSearch()"><div class="searchinner"><input id="searchInput" placeholder="সংবাদ খুঁজুন..."><button onclick="closeSearch()">বন্ধ</button></div></div>
+
+<script type="module">
+import{initializeApp}from"https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+import{getDatabase,ref,onValue,runTransaction}from"https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
+const cfg={apiKey:"AIzaSyCyCHGwpL_74x4RzR1VUD9yHWvbJCzSgDU",authDomain:"desher-news.firebaseapp.com",databaseURL:"https://desher-news-default-rtdb.asia-southeast1.firebasedatabase.app",projectId:"desher-news",storageBucket:"desher-news.firebasestorage.app",messagingSenderId:"611369261649",appId:"1:611369261649:web:af2cf692fd8494b8807670",measurementId:"G-PYR15GJMEY"};
+const app=initializeApp(cfg),db=getDatabase(app),$=id=>document.getElementById(id);
+let news={},breaking={},ads={},settings={};
+const esc=s=>String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const img=n=>n.image||"https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=75";
+const published=()=>Object.entries(news).filter(x=>x[1].status==="published").sort((a,b)=>(b[1].createdAt||0)-(a[1].createdAt||0));
+function when(ts){if(!ts)return"";let d=Math.max(0,Date.now()-ts),m=Math.floor(d/60000);if(m<1)return"এইমাত্র";if(m<60)return m+" মিনিট আগে";let h=Math.floor(m/60);if(h<24)return h+" ঘণ্টা আগে";return new Intl.DateTimeFormat("bn-BD",{day:"numeric",month:"long",year:"numeric"}).format(new Date(ts))}
+function openArticle(id,push=true){let n=news[id];if(!n||n.status!=="published")return;document.querySelector("main.container").style.display="none";articlePage.classList.add("active");articleContent.innerHTML=`<span class="category">${esc(n.category||"সর্বশেষ")}</span><h1>${esc(n.title)}</h1><div class="meta">${esc(n.author||"দেশের নিউজ ডেস্ক")} • ${when(n.createdAt)} • 👁 ${Number(n.views)||0}</div>${n.image?`<img class="article-img" src="${esc(n.image)}" alt="${esc(n.title)}">`:""}${n.summary?`<p style="font-size:20px;font-weight:600">${esc(n.summary)}</p>`:""}<div class="article-body">${esc(n.body)}</div>`;window.scrollTo({top:0,behavior:"smooth"});if(push)history.pushState({news:id},"","?news="+encodeURIComponent(id));shareBtn.onclick=()=>window.open("https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(location.origin+"/share/"+encodeURIComponent(id)),"_blank","noopener");countView(id);renderAd("AD_ARTICLE_BOTTOM",ads.bottomBanner)}
+async function countView(id){let key="viewed_"+id;if(sessionStorage.getItem(key))return;sessionStorage.setItem(key,"1");try{await runTransaction(ref(db,"news/"+id+"/views"),v=>(Number(v)||0)+1)}catch(e){sessionStorage.removeItem(key);console.warn("View count blocked by database rules",e)}}
+backBtn.onclick=()=>{articlePage.classList.remove("active");document.querySelector("main.container").style.display="";history.pushState({},"",location.pathname);window.scrollTo(0,0)}
+window.onpopstate=()=>{let id=new URLSearchParams(location.search).get("news");if(id)openArticle(id,false);else{articlePage.classList.remove("active");document.querySelector("main.container").style.display=""}}
+function leadHtml(id,n){return `<div class="lead-image"><img src="${esc(img(n))}" alt="${esc(n.title)}"></div><div class="lead-copy"><span class="category">${esc(n.category||"সর্বশেষ")}</span><h2>${esc(n.title)}</h2><p>${esc(n.summary||"")}</p><div class="meta">${esc(n.author||"দেশের নিউজ ডেস্ক")} • ${when(n.createdAt)} • 👁 ${n.views||0}</div></div>`}
+function card([id,n]){return `<article class="news-card article-click" data-id="${id}"><img loading="lazy" src="${esc(img(n))}" alt="${esc(n.title)}"><div class="copy"><span class="category">${esc(n.category||"সর্বশেষ")}</span><h3>${esc(n.title)}</h3><div class="meta">${when(n.createdAt)} • 👁 ${n.views||0}</div></div></article>`}
+function small([id,n]){return `<article class="story article-click" data-id="${id}"><img loading="lazy" src="${esc(img(n))}" alt=""><div class="story-copy"><span class="category">${esc(n.category||"")}</span><h3>${esc(n.title)}</h3><div class="meta">${when(n.createdAt)} • 👁 ${n.views||0}</div></div></article>`}
+function listItem([id,n]){return `<article class="list-item article-click" data-id="${id}"><img loading="lazy" src="${esc(img(n))}" alt=""><div class="copy"><span class="category">${esc(n.category||"")}</span><h4>${esc(n.title)}</h4><div class="meta">👁 ${n.views||0}</div></div></article>`}
+function renderNews(){let a=published();if(!a.length){document.querySelector(".hero").innerHTML='<div class="empty">Admin Panel থেকে প্রথম সংবাদ Publish করলে এখানে দেখা যাবে।</div>';latestGrid.innerHTML='<div class="empty">এখনো কোনো সংবাদ প্রকাশিত হয়নি।</div>';return}let featured=a.find(x=>x[1].featured)||a[0];document.querySelector(".lead").dataset.id=featured[0];document.querySelector(".lead").classList.add("article-click");document.querySelector(".lead").innerHTML=leadHtml(...featured);let side=a.filter(x=>x[0]!==featured[0]).slice(0,4);sideLead.innerHTML=side.map(small).join("");latestGrid.innerHTML=a.slice(0,6).map(card).join("");let nat=a.filter(x=>x[1].category==="জাতীয়");let natAll=(nat.length?nat:a).slice(0,5);document.querySelector(".feature-big").dataset.id=natAll[0][0];document.querySelector(".feature-big").classList.add("article-click");document.querySelector(".feature-big").innerHTML=`<img src="${esc(img(natAll[0][1]))}"><div class="copy"><span class="category">${esc(natAll[0][1].category||"জাতীয়")}</span><h3>${esc(natAll[0][1].title)}</h3><div class="meta">👁 ${natAll[0][1].views||0}</div></div>`;nationalList.innerHTML=natAll.slice(1).map(listItem).join("");fillGrid("politicsGrid","রাজনীতি",a);fillGrid("sportsGrid","খেলাধুলা",a);fillGrid("techGrid","প্রযুক্তি",a);let pop=[...a].sort((x,y)=>(y[1].views||0)-(x[1].views||0)).slice(0,5);popular.innerHTML=pop.map((x,i)=>`<a class="rank article-click" data-id="${x[0]}" href="?news=${x[0]}"><span class="rank-no">0${i+1}</span><h4>${esc(x[1].title)}</h4></a>`).join("");document.querySelectorAll(".article-click").forEach(el=>el.onclick=e=>{e.preventDefault();openArticle(el.dataset.id)});let q=new URLSearchParams(location.search).get("news");if(q&&news[q])openArticle(q,false)}
+function fillGrid(id,cat,a){let x=a.filter(v=>v[1].category===cat).slice(0,3);$(id).innerHTML=(x.length?x:a.slice(0,3)).map(card).join("")}
+function renderBreaking(){let a=Object.values(breaking).filter(x=>x.active!==false).sort((x,y)=>(y.createdAt||0)-(x.createdAt||0));document.querySelector(".breaking-track span").innerHTML=a.length?a.map(x=>esc(x.text)).join(" &nbsp; • &nbsp; "):"দেশের নিউজে স্বাগতম • সর্বশেষ সংবাদ জানতে সঙ্গে থাকুন"}
+function executeCode(el,code){el.innerHTML="";if(!code)return;let temp=document.createElement("div");temp.innerHTML=code;function addNode(node,target){if(node.nodeName==="SCRIPT"){let s=document.createElement("script");[...node.attributes].forEach(a=>s.setAttribute(a.name,a.value));s.text=node.textContent||"";target.appendChild(s)}else{let clone=node.cloneNode(false);target.appendChild(clone);[...node.childNodes].forEach(child=>addNode(child,clone))}}[...temp.childNodes].forEach(node=>addNode(node,el))}
+function renderAd(id,code){let el=$(id);if(!el)return;if(ads.enabled===false||!code){el.classList.remove("active");el.innerHTML="";return}el.classList.add("active");executeCode(el,code)}
+function renderAds(){renderAd("AD_TOP",ads.topBanner);renderAd("AD_MIDDLE",ads.middleBanner);renderAd("AD_BOTTOM",ads.bottomBanner);renderAd("AD_SIDEBAR",ads.sidebarBanner);runPopunder()}
+function runPopunder(){if(ads.enabled===false)return;let code=ads.monetag||ads.popunder;if(!code)return;let f=ads.popFrequency||"once_session",k="dn_pop_"+(f==="once_day"?new Date().toISOString().slice(0,10):"session");if(f==="once_session"&&sessionStorage.getItem(k))return;if(f==="once_day"&&localStorage.getItem(k))return;if(f==="once_session")sessionStorage.setItem(k,"1");if(f==="once_day")localStorage.setItem(k,"1");let holder=document.createElement("div");holder.style.display="none";document.body.appendChild(holder);executeCode(holder,code)}
+onValue(ref(db,"news"),s=>{news=s.val()||{};renderNews()});onValue(ref(db,"breakingNews"),s=>{breaking=s.val()||{};renderBreaking()});onValue(ref(db,"ads"),s=>{ads=s.val()||{};renderAds()});onValue(ref(db,"settings"),s=>{settings=s.val()||{};if(settings.siteName)document.querySelector(".brand h1").textContent=settings.siteName;if(settings.tagline)document.querySelector(".brand p").textContent=settings.tagline});
+year.textContent=new Date().getFullYear();try{today.textContent=new Intl.DateTimeFormat("bn-BD",{weekday:"long",year:"numeric",month:"long",day:"numeric"}).format(new Date())}catch(e){}
+window.openSearch=()=>{searchbox.style.display="block";setTimeout(()=>searchInput.focus(),50)};window.closeSearch=()=>searchbox.style.display="none";document.addEventListener("keydown",e=>{if(e.key==="Escape")closeSearch()});
+</script>
+</body>
+</html>
